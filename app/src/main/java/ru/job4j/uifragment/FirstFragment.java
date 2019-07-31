@@ -34,19 +34,6 @@ public class FirstFragment extends Fragment {
         return view;
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-           callback = (OnNextButtonClickListener) context; // назначаем активити при присоединении фрагмента к активити
-
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        callback = null; // обнуляем ссылку при отсоединении фрагмента от активити
-    }
-
 
 
 }

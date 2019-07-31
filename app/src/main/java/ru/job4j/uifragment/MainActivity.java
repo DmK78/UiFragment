@@ -26,23 +26,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public class HostFragmentsActivity extends AppCompatActivity implements FirstFragment.OnNextButtonClickListener {
-        @Override
-        public void onNextButtonClicked(String message) {
-            Bundle bundle = new Bundle();
-            bundle.putString("message", message);
-            if (secondFragment == null) {
-                secondFragment = new SecondFragment();
-            }
-            secondFragment.setArguments(bundle);
-            fm.beginTransaction()
-                    .replace(R.id.fragment_container, secondFragment)
-                    .addToBackStack(null)
-                    .commit();
-
-        }
-
-    }
 
 
 
