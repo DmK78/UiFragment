@@ -27,7 +27,7 @@ public class FirstFragment extends Fragment {
         buttonNextFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                callback.onNextButtonClicked("Greetings from first fragment");
+                callback. onNextButtonClicked("Greetings from first fragment");
             }
         });
         return view;
